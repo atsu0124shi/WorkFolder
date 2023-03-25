@@ -1,0 +1,9 @@
+https://github.com/atsu0124shi/WorkFolder.git
+
+
+git add 作業フォルダー
+
+
+git commit -m “新規追加”
+
+git remote add origin https://github.com/atsu0124shi/WorkFolder.git
