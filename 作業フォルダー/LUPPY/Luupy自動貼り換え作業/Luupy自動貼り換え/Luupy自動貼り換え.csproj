@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <BaseOutputPath>C:\LUPPY\Luupy自動貼り換え作業\bin</BaseOutputPath>
+    <BaseOutputPath>C:\WorkFolder\作業フォルダー\LUPPY\Luupy自動貼り換え作業\bin</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
