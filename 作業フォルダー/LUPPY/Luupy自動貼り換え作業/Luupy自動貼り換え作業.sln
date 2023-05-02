@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Utility", "Utility\Utility.shproj", "{B5759595-1D7A-44C0-9C92-0E330FBE23E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Luupy自動貼り換え", "Luupy自動貼り換え\Luupy自動貼り換え.csproj", "{CF75C66C-4668-4682-84D3-41C5AA23D998}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF75C66C-4668-4682-84D3-41C5AA23D998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF75C66C-4668-4682-84D3-41C5AA23D998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF75C66C-4668-4682-84D3-41C5AA23D998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF75C66C-4668-4682-84D3-41C5AA23D998}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5288C1A-04D3-4BF3-B8CC-80A4F1F9CA0E}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Utility\Utility.projitems*{b5759595-1d7a-44c0-9c92-0e330fbe23e3}*SharedItemsImports = 13
+		Utility\Utility.projitems*{cf75c66c-4668-4682-84d3-41c5aa23d998}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
