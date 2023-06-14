@@ -9,6 +9,7 @@
     <Import_RootNamespace>Utility</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)LuupyExcel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)File.cs" />
   </ItemGroup>
 </Project>

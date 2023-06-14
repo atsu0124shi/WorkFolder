@@ -31,6 +31,8 @@ namespace Luupy自動貼り換え
             const string kokokuwaku2 = "ad02";
             const string updateButton = "更新する";
             const string logOut = "ログアウト";
+            const string filePath = @"..\LUPPY管理簿.xlsx";
+
 
             Console.WriteLine("ChromeDriverを取得中");
 
@@ -50,13 +52,15 @@ namespace Luupy自動貼り換え
                 await Utility.File.Update(driver);
             });
 
+            // 会員サイトから今月の画像URL(広告枠2)を取得して、LUUPY管理簿にセット
+            string settingValue = Utility.LuupyExcel.Update(driver, filePath);
+
             // Data関連を定義
             DataSet dataset = new DataSet();
             DataTable luppyDataTable = new DataTable();
-            DataTable settingDataTable = new DataTable();
 
             #region Luupyエクセルから情報を取得
-            using (FileStream stream = new FileStream(@"..\LUPPY管理簿.xlsx", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var streamReader = new StreamReader(stream))
             {
                 IExcelDataReader reader;
@@ -71,14 +75,13 @@ namespace Luupy自動貼り換え
 
                 // DataTableに設定
                 luppyDataTable = dataset.Tables["一覧"];
-                settingDataTable = dataset.Tables["広告設定"];
 
                 reader.Dispose();
             }
             #endregion
 
             // 広告枠2の設定値を設定
-            string settingValue = settingDataTable.Rows[1][2].ToString();
+            //string settingValue = settingDataTable.Rows[1][2].ToString();
 
             // ログインして広告設定値を変更する
             // ループする処理はここから
