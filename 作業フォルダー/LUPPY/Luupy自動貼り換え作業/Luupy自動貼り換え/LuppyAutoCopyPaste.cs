@@ -37,7 +37,7 @@ namespace Luupy自動貼り換え
             Console.WriteLine("ChromeDriverを取得中");
 
             // インストールされているバージョン
-            new DriverManager().SetUpDriver(new ChromeConfig(), VersionResolveStrategy.MatchingBrowser);
+            new DriverManager().SetUpDriver(new ChromeConfig());
 
             Console.WriteLine("ChromeDriverを取得終了");
 
