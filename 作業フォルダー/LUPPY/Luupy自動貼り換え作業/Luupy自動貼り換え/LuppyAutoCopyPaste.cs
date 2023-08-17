@@ -34,12 +34,12 @@ namespace Luupy自動貼り換え
             const string filePath = @"..\LUPPY管理簿.xlsx";
 
 
-            Console.WriteLine("ChromeDriverを取得中");
+            //Console.WriteLine("ChromeDriverを取得中");
 
-            // インストールされているバージョン
-            new DriverManager().SetUpDriver(new ChromeConfig());
+            //// インストールされているバージョン
+            //new DriverManager().SetUpDriver(new ChromeConfig());
 
-            Console.WriteLine("ChromeDriverを取得終了");
+            //Console.WriteLine("ChromeDriverを取得終了");
 
             // Webドライバーのインスタンス化
             IWebDriver driver = new ChromeDriver();

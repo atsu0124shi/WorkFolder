@@ -23,9 +23,6 @@ namespace Utility
         public static async Task Update (IWebDriver driver)
         {
             driver.Navigate().GoToUrl(@"chrome://settings/help");
-
-            // フォルダを削除
-            await DirDeleteAsync(@"Chrome\");
         }
 
         /// <summary>
